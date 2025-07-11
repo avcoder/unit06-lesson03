@@ -46,6 +46,24 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Exercise: Use React DevTools to find component
+10 mins
+
+- Install React DevTools for your browser and explore it (should be similar to Vue DevTools)
+- Goto: instagram.com
+   - Try to find the React component for the Login button
+   - why do the React components look weird/minified? (prod vs development)
+   - Try to change a value of a prop in any component to see what might happen
+- View your local App.tsx again in the browser
+  - Just like you right-click inspect DOM element to find that particular HTML element in the DOM, you can do similar with React components
+  - try changing prop values (like `label`)
+  - Tip: in Chrome devtools, can use `Cmd + p` to find React filename
+
+
+---
+transition: slide-left
+---
+
 # Common Gotchas
 Try the following common errors to see what errors look like in React.  Find solutions for each.
 
