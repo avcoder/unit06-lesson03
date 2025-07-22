@@ -41,6 +41,29 @@ transition: slide-left
 
 - reminder: Algorithm and Data Structure Assignment due Jul. 20 
 - repo of where we left off: https://github.com/avcoder/test-react
+   - separate what we've done into its own `Lesson01.tsx` component
+   - create `Lesson02.tsx` 
+   - `npm i tachyons`
+   - `import 'tachyons' in `Lesson02.tsx`
+   - `declare module "tachyons";` in `vite-env.d.ts`
+   - take tachyons html list of people and transform it into JSX
+```jsx
+      <div style={{ backgroundColor: "#fff", width: "90vw", height: "90vh" }}>
+        <main className="pt6 mw6 center">
+          {data.map((person) => (
+            <FollowPerson
+              key={person.username}
+              avatar={person.avatar}
+              name={person.name}
+              username={person.username}
+              isFollowing={person.isFollowing}
+            />
+          ))}
+        </main>
+      </div>
+```
+
+
 
 ---
 transition: slide-left
@@ -59,6 +82,48 @@ transition: slide-left
   - try changing prop values (like `label`)
   - Tip: in Chrome devtools, can use `Cmd + p` to find React filename
 
+---
+transition: slide-left
+---
+
+# useState
+
+- re-examine the Counter button app we made in week 1
+- whenever we need to keep track of dynamic values, we need to use some form of React state
+- to create a state variable: `useState` function
+   - this function takes a single argument: the initial value or a function
+   - returns an array containing: current state, updater function
+- useState is a "hook" - a special type of function that allows us to hook into React internals
+- naming conventions
+- by calling `setCount` the UI gets updated 
+- whenever a state variable is updated, it triggers a re-render; React will call the Counter function again, creating a brand new React element
+- each render is like taking a snapshot
+
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/dodds.png
+backgroundSize: 400px 270px
+class: text-left
+---
+
+# 10 minute break
+
+🍦 Cool Tips, Trends and Resources:
+
+- ⌨️ [React Cheat Sheet](https://zerotomastery.io/cheatsheets/react-cheat-sheet/)
+- 🧊 [Importing React Through the Ages](https://www.epicreact.dev/importing-react-through-the-ages)
+- ⋈ [Should I useState or useReducer](https://kentcdodds.com/blog/should-i-usestate-or-usereducer)
+
+
+
+<br>
+<hr>
+<br>
+
+- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
 ---
 transition: slide-left
@@ -92,30 +157,7 @@ transition: slide-left
 - ✅ AFTER: should now be able to use `import Component from '@/components/whatever' 
 
 
----
-layout: image-right
-transition: slide-left
-image: /assets/dodds.png
-backgroundSize: 400px 270px
-class: text-left
----
 
-# 10 minute break
-
-🍦 Cool Tips, Trends and Resources:
-
-- ⌨️ [React Cheat Sheet](https://zerotomastery.io/cheatsheets/react-cheat-sheet/)
-- 🧊 [Importing React Through the Ages](https://www.epicreact.dev/importing-react-through-the-ages)
-- ⋈ [Should I useState or useReducer](https://kentcdodds.com/blog/should-i-usestate-or-usereducer)
-
-
-
-<br>
-<hr>
-<br>
-
-- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
-- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
 ---
 transition: slide-left
