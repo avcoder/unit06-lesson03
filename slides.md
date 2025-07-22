@@ -99,6 +99,18 @@ transition: slide-left
 - whenever a state variable is updated, it triggers a re-render; React will call the Counter function again, creating a brand new React element
 - each render is like taking a snapshot
 
+---
+transition: slide-left
+---
+
+# Exercises
+
+1. Use `useState` to toggle a boolean value
+   - ex: make the `+ Follow` button change to `- Following`
+   - see https://unit06-lesson02.netlify.app/6
+1. Use useState with multiple values in an array
+   - ex: when button is clicked, display one more user from array
+   - see https://unit06-lesson02.netlify.app/8
 
 ---
 layout: image-right
@@ -124,6 +136,17 @@ class: text-left
 
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
+
+---
+transition: slide-left
+---
+
+# Exercise: Lifting State Up
+Parent-Child communication means having a parent component manage the state, and pass down state setters as props
+
+- see https://unit06-lesson02.netlify.app/4
+- Identify where state needs to located, and where state needs to be lifted up
 
 ---
 transition: slide-left
