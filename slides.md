@@ -39,7 +39,6 @@ transition: slide-left
 
 # Recap
 
-- reminder: Algorithm and Data Structure Assignment due Jul. 20 
 - repo of where we left off: https://github.com/avcoder/test-react
    - separate what we've done into its own `Lesson01.tsx` component
    - create `Lesson02.tsx` 
