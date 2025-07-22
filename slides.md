@@ -142,16 +142,6 @@ class: text-left
 transition: slide-left
 ---
 
-# Exercise: Lifting State Up
-Parent-Child communication means having a parent component manage the state, and pass down state setters as props
-
-- see https://unit06-lesson02.netlify.app/4
-- Identify where state needs to located, and where state needs to be lifted up
-
----
-transition: slide-left
----
-
 # Common Gotchas
 Try the following common errors to see what errors look like in React.  Find solutions for each.
 
@@ -168,6 +158,17 @@ Try the following common errors to see what errors look like in React.  Find sol
 - if `numOfItems` is 0, this will render 0 `{numOfItems && <ShoppingList items={shoppingList} />}`
 - examine if there are any more red squiggly lines in VSCode? 
 
+
+
+---
+transition: slide-left
+---
+
+# Exercise: Lifting State Up
+Parent-Child communication means having a parent component manage the state, and pass down state setters as props
+
+- see https://unit06-lesson02.netlify.app/4
+- Identify where state needs to located, and where state needs to be lifted up
 
 ---
 transition: slide-left
